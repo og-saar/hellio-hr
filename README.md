@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# Hellio HR — Candidate Profile Viewer & Diff
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A recruitment tool for viewing, searching, and comparing candidate profiles against open positions. Built as a frontend-only React app with hardcoded JSON data and a service layer designed for easy backend migration.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Candidate List** — Search by name, skills, or location. Filter by pipeline status (new, screening, interview, offer, hired, rejected).
+- **Candidate Profile** — Full view of work experience, education, skills, certifications, languages, and contact info. Download the original CV as PDF.
+- **Position Linking** — Add or remove positions from a candidate's profile. Bidirectional — updates both the candidate and position records.
+- **Candidate Compare** — Select two candidates for side-by-side comparison. Skills diff highlights shared and unique skills.
+- **Position List & Detail** — Browse open positions with must-have/nice-to-have requirements, responsibilities, tech stack, salary range, and linked candidates.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Layer   | Technology                                          |
+| ------- | --------------------------------------------------- |
+| Framework | React 19                                          |
+| Bundler | Vite                                                |
+| Language | TypeScript                                         |
+| Styling | Tailwind CSS v4                                     |
+| Routing | React Router v7                                     |
+| Fonts   | DM Sans + JetBrains Mono (Google Fonts)             |
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open [http://localhost:5173](http://localhost:5173).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Command             | Description              |
+| ------------------- | ------------------------ |
+| `npm run dev`       | Start dev server         |
+| `npm run build`     | Production build         |
+| `npm run preview`   | Preview production build |
+
+## Project Structure
+
 ```
+src/
+  types/           TypeScript interfaces (Candidate, Position)
+  data/            Hardcoded JSON data (candidates.json, positions.json)
+  services/        Promise-based service layer (swap for API calls later)
+  hooks/           Custom React hooks (useCandidates, usePositions)
+  components/
+    layout/        Sidebar navigation, page layout
+    candidates/    CandidateCard, CandidateCompare, StatusBadge
+    positions/     PositionStatusBadge, WorkArrangementBadge
+  pages/           Route-level page components
+public/
+  cvs/             Source CV PDFs for download
+docs/
+  frontend-architecture.md    Detailed frontend documentation
+  backend-migration-guide.md  What to change when adding an API
+```
+
+## Architecture
+
+Components and pages never touch data directly. The dependency chain is:
+
+```
+Pages/Components → Hooks → Services → JSON data
+```
+
+The service layer returns `Promise<T>` so replacing JSON imports with `fetch` calls requires zero changes to hooks or components. See [`docs/backend-migration-guide.md`](docs/backend-migration-guide.md) for details.
+
+## Data
+
+Three candidates extracted from source CVs and three positions extracted from job descriptions, cross-linked via ID arrays:
+
+```
+Candidate.positionIds[] ←→ Position.candidateIds[]
+```
+
+Mutations (add/remove position links) work in-memory using `structuredClone` of the JSON imports.
