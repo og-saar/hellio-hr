@@ -1,0 +1,110 @@
+[
+  {
+    "id": "p001",
+    "title": "Senior DevOps Engineer",
+    "company": "Fintech Startup (Series B)",
+    "contactName": "Sarah Chen",
+    "contactEmail": "sarah.chen@company.com",
+    "status": "open",
+    "postedDate": "2025-01-15",
+    "timeline": "4 weeks",
+    "workArrangement": "hybrid",
+    "salaryRange": "Competitive + equity",
+    "summary": "Senior DevOps Engineer needed for a fast-paced fintech startup. The role involves leading infrastructure automation initiatives, mentoring junior engineers, and architecting migration to EKS. Hybrid work, 3 days office in Tel Aviv.",
+    "mustHave": [
+      "5+ years hands-on DevOps experience",
+      "Strong AWS expertise",
+      "Kubernetes production experience",
+      "Terraform for IaC",
+      "CI/CD pipelines (GitLab CI preferred)",
+      "Python or Go for automation scripting"
+    ],
+    "niceToHave": [
+      "Experience with monitoring stacks (Prometheus + Grafana)",
+      "AWS certifications (Solutions Architect or DevOps Engineer)",
+      "Experience with microservices architectures",
+      "On-call experience with incident management"
+    ],
+    "responsibilities": [
+      "Leading infrastructure automation initiatives",
+      "Mentoring 2-3 junior engineers",
+      "Architecting migration to EKS",
+      "On-call rotation (1 week per month)"
+    ],
+    "techStack": ["AWS", "Kubernetes", "EKS", "Terraform", "GitLab CI", "Python", "Go", "Prometheus", "Grafana"],
+    "candidateIds": ["c010"],
+    "sourceFile": "job_001_senior_devops.txt"
+  },
+  {
+    "id": "p002",
+    "title": "Junior DevOps Engineer",
+    "company": "TechCorp",
+    "contactName": "Michael Goldberg",
+    "contactEmail": "m.goldberg@techcorp.co.il",
+    "status": "open",
+    "postedDate": "2025-01-20",
+    "timeline": "2-3 weeks for interviews",
+    "workArrangement": "onsite",
+    "salaryRange": "12,000-15,000 NIS/month",
+    "summary": "Entry-level DevOps position for someone starting their career or transitioning into DevOps. Great mentorship opportunity with a senior team. Office-based in Herzliya for first 6 months, then hybrid.",
+    "mustHave": [
+      "0-2 years experience",
+      "Basic understanding of Linux systems",
+      "Some scripting knowledge (Bash, Python preferred)",
+      "Familiarity with Docker basics",
+      "B.Sc in Computer Science or related field (or equivalent)",
+      "Hebrew and English fluency"
+    ],
+    "niceToHave": [
+      "Willingness to learn and grow",
+      "Good communication skills",
+      "Problem-solving mindset"
+    ],
+    "responsibilities": [
+      "Work with senior DevOps team on day-to-day operations",
+      "Help with automation tasks",
+      "Learn production systems management",
+      "Kubernetes and container orchestration training",
+      "CI/CD best practices learning"
+    ],
+    "techStack": ["Azure", "Docker", "Kubernetes", "Terraform", "Bash", "Python"],
+    "candidateIds": ["c001", "c005"],
+    "sourceFile": "job_002_junior_devops.txt"
+  },
+  {
+    "id": "p004",
+    "title": "Platform Engineer (Mid-Level)",
+    "company": "Cloud Native Corp",
+    "contactName": "Rachel Levy",
+    "contactEmail": "rachel.l@cloud-native-corp.io",
+    "status": "open",
+    "postedDate": "2025-02-01",
+    "timeline": "Start interviews next month",
+    "workArrangement": "hybrid",
+    "salaryRange": "18,000-22,000 NIS/month + benefits",
+    "summary": "Mid-level Platform Engineer to join the platform team building internal developer platforms. High impact role affecting 50+ developers. Hybrid work, 2-3 days office in Jerusalem.",
+    "mustHave": [
+      "3-5 years software engineering or DevOps experience",
+      "Strong Kubernetes knowledge",
+      "Experience with at least one IaC tool (Terraform preferred)",
+      "Comfortable with Python, Go, or similar",
+      "Understanding of developer workflows and pain points",
+      "Good communication skills"
+    ],
+    "niceToHave": [
+      "Experience with internal developer platforms",
+      "Backstage experience",
+      "ArgoCD experience"
+    ],
+    "responsibilities": [
+      "Design and build internal platforms for development teams",
+      "Create self-service tools and automation",
+      "Work on Kubernetes-based PaaS",
+      "Improve CI/CD pipelines and deployment workflows",
+      "Collaborate with 8 product teams"
+    ],
+    "techStack": ["AWS", "EKS", "Terraform", "ArgoCD", "GitHub Actions", "Backstage", "Vault", "PostgreSQL", "Python", "Go"],
+    "candidateIds": ["c010"],
+    "sourceFile": "job_004_platform_engineer.txt"
+  }
+]

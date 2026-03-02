@@ -1,0 +1,169 @@
+[
+  {
+    "id": "c001",
+    "name": "Aarav Hayes",
+    "email": "aarav.hayes@email.com",
+    "phone": "060-4281563",
+    "location": "Be'er Sheva, Israel",
+    "linkedinUrl": "https://linkedin.com/in/aarav-hayes",
+    "githubUrl": "https://github.com/aaravhayes",
+    "professionalTitle": "Junior DevOps Engineer",
+    "summary": "Motivated Junior DevOps Engineer with 1.5 years of experience in cloud infrastructure and automation. Recently completed DevOps bootcamp and eager to apply CI/CD best practices in production environments. Strong foundation in Linux administration, containerization, and infrastructure as code. Quick learner with a passion for automation and continuous improvement.",
+    "skills": ["Git", "Kubernetes (basics)", "GitHub Actions", "Jenkins", "ECS", "AWS (EC2, S3, RDS)", "Docker"],
+    "languages": ["Hebrew (Native)", "English (Native)"],
+    "workExperience": [
+      {
+        "title": "Junior DevOps Engineer",
+        "company": "Company 328",
+        "location": "Tel Aviv",
+        "startDate": "2023",
+        "description": "Maintain and monitor AWS infrastructure for 3 client applications",
+        "highlights": [
+          "Write Bash and Python scripts to automate deployment tasks",
+          "Assist in managing Docker containers and basic Kubernetes deployments",
+          "Configure Jenkins pipelines for automated testing and deployment",
+          "Troubleshoot Linux server issues and perform routine maintenance",
+          "Document deployment procedures and runbooks"
+        ]
+      },
+      {
+        "title": "IT Support Technician",
+        "company": "Company 396",
+        "location": "Herzliya",
+        "startDate": "2021",
+        "endDate": "2023",
+        "description": "Provided technical support for 200+ employees",
+        "highlights": [
+          "Managed Windows and Linux workstations",
+          "Troubleshot network connectivity issues",
+          "Maintained internal documentation wiki"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Sc. in Computer Science (In Progress)",
+        "institution": "Open University of Israel",
+        "startDate": "2022"
+      }
+    ],
+    "certifications": [
+      { "name": "Microsoft Certified: Azure Solutions Architect Expert", "issuer": "Microsoft", "date": "2022" },
+      { "name": "Microsoft Certified: Azure Fundamentals", "issuer": "Microsoft", "date": "2021" }
+    ],
+    "positionIds": ["p002"],
+    "cvFile": "/cvs/cv_001.pdf",
+    "status": "screening"
+  },
+  {
+    "id": "c005",
+    "name": "Abigail Bauer",
+    "email": "abigail.bauer@email.com",
+    "phone": "060-3563275",
+    "location": "Herzliya, Israel",
+    "linkedinUrl": "https://linkedin.com/in/abigailbauer",
+    "professionalTitle": "Aspiring DevOps Engineer",
+    "summary": "Career changer transitioning from sales to DevOps engineering. Recently completed intensive DevOps bootcamp (DevOps Experts, 2024). Strong communication skills, customer-focused mindset, and passion for technology. Quick learner with demonstrated ability to master new technical concepts. Seeking junior DevOps role to apply newly acquired skills.",
+    "skills": ["Bash scripting (basic)", "Git", "Docker (basics)", "Linux fundamentals", "Ruby", "ARM Templates", "New Relic", "Terraform", "Prometheus", "AWS (EC2, S3)"],
+    "languages": ["Hebrew (Native)", "English (Professional)", "Spanish (Conversational)"],
+    "workExperience": [
+      {
+        "title": "Senior Sales Representative",
+        "company": "Company 013",
+        "location": "Tel Aviv",
+        "startDate": "2019",
+        "endDate": "2024",
+        "description": "Managed key accounts generating $2M annual revenue",
+        "highlights": [
+          "Achieved 120% of sales quota for 4 consecutive years",
+          "Collaborated with technical teams to understand product capabilities",
+          "Presented technical solutions to clients",
+          "Built strong relationships with C-level executives"
+        ]
+      },
+      {
+        "title": "Sales Associate",
+        "company": "Company 133",
+        "location": "Ra'anana",
+        "startDate": "2017",
+        "endDate": "2019",
+        "description": "Exceeded monthly sales targets consistently",
+        "highlights": [
+          "Provided customer service and support",
+          "Managed inventory and point-of-sale systems"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.A. in Business Administration",
+        "institution": "Ariel University",
+        "startDate": "2013",
+        "endDate": "2017"
+      }
+    ],
+    "certifications": [
+      { "name": "ISTQB Certified Tester Foundation Level", "issuer": "ISTQB", "date": "2020" },
+      { "name": "Certified Kubernetes Security Specialist (CKS)", "issuer": "CNCF", "date": "2022" }
+    ],
+    "positionIds": ["p002"],
+    "cvFile": "/cvs/cv_005.pdf",
+    "status": "new"
+  },
+  {
+    "id": "c010",
+    "name": "Addison Tran",
+    "email": "addison.tran@email.com",
+    "phone": "060-4238787",
+    "location": "Ashdod, Israel",
+    "linkedinUrl": "https://linkedin.com/in/addison-tran",
+    "githubUrl": "https://github.com/addisontran",
+    "professionalTitle": "Site Reliability Engineer",
+    "summary": "Site Reliability Engineer with 4 years of experience building and maintaining highly available systems. Specialized in observability, incident response, and automation. Strong background in Kubernetes orchestration, monitoring stack design, and performance optimization. Passionate about improving system reliability through SRE best practices and SLO-driven development.",
+    "skills": ["CircleCI", "Groovy", "GitHub Actions", "Ansible", "Pulumi", "Prometheus", "ELK Stack", "AWS (EKS, CloudWatch)", "Terraform", "Kubernetes", "Docker", "Grafana"],
+    "languages": ["Hebrew (Native)", "English (Native)", "Arabic (Native)"],
+    "workExperience": [
+      {
+        "title": "Site Reliability Engineer",
+        "company": "Company 330",
+        "location": "Haifa",
+        "startDate": "2022",
+        "description": "Manage production Kubernetes clusters serving 50M+ requests daily",
+        "highlights": [
+          "Reduced incident MTTR by 60% through improved monitoring and automated remediation",
+          "Designed and implemented observability stack using Prometheus, Grafana, and Loki",
+          "Created SLO framework and error budget policies for 15+ services",
+          "Led post-mortem process and drove reliability improvements",
+          "Built CI/CD pipelines integrating automated testing and progressive deployment"
+        ]
+      },
+      {
+        "title": "DevOps Engineer",
+        "company": "Company 417",
+        "location": "Be'er Sheva",
+        "startDate": "2020",
+        "endDate": "2022",
+        "description": "Deployed and maintained AWS infrastructure using Terraform",
+        "highlights": [
+          "Migrated applications from EC2 to containerized Kubernetes environment",
+          "Implemented centralized logging with ELK stack",
+          "Automated deployment processes reducing release time by 70%"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Sc. in Software Engineering",
+        "institution": "Ben-Gurion University of the Negev",
+        "startDate": "2016",
+        "endDate": "2020"
+      }
+    ],
+    "certifications": [
+      { "name": "AWS Certified Cloud Practitioner", "issuer": "AWS", "date": "2023" }
+    ],
+    "positionIds": ["p001", "p004"],
+    "cvFile": "/cvs/cv_010.pdf",
+    "status": "interview"
+  }
+]
